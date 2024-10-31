@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* body {
+  background-color: #e9ebdb; 
+} */
+body {
+  background-color: #94acb3; 
+}
+
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
