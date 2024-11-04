@@ -39,7 +39,7 @@ function FilterClientWork() {
     const fetchClients = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3007/user/${userId}/clients`,
+          `https://zeiterfassung-0uiy.onrender.com/user/${userId}/clients`,
           {
             method: "GET",
             credentials: "include",
@@ -67,7 +67,7 @@ function FilterClientWork() {
     try {
       const { clientId, start, end } = formData;
       const response = await fetch(
-        `http://localhost:3007/timeEntry/${clientId}?start=${start}&end=${end}`,
+        `https://zeiterfassung-0uiy.onrender.com/timeEntry/${clientId}?start=${start}&end=${end}`,
         {
           method: "GET",
           credentials: "include",

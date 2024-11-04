@@ -32,7 +32,7 @@ function AddTimeWork() {
     useEffect(() => {
         const fetchClients = async () => {
             try {
-                const response = await fetch(`http://localhost:3007/user/${userId}/clients`, {
+                const response = await fetch(`https://zeiterfassung-0uiy.onrender.com/user/${userId}/clients`, {
                     method: "GET",
                     credentials: 'include',
                     headers: {
@@ -65,7 +65,7 @@ function AddTimeWork() {
         e.preventDefault();
         try{
             console.log(formData)
-            const response = await fetch(`http://localhost:3007/timeEntry`, {
+            const response = await fetch(`https://zeiterfassung-0uiy.onrender.com/timeEntry`, {
                 method: "POST",
                 credentials: 'include',
                 headers: {

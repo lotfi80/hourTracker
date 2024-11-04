@@ -17,7 +17,7 @@ setFormData({...formdata, [e.target.name]: e.target.value})
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    await fetch("http://localhost:3007/auth/register", {
+    await fetch("https://zeiterfassung-0uiy.onrender.com/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

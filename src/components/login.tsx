@@ -20,7 +20,7 @@ function Login() {
     const handleSubmit = async (e:any) => {
       e.preventDefault();
       try {
-        const response = await fetch("http://localhost:3007/auth/login", {
+        const response = await fetch("https://zeiterfassung-0uiy.onrender.com/auth/login", {
           method: "POST",credentials: 'include',
           headers: {
             "Content-Type": "application/json",

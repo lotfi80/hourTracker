@@ -22,7 +22,7 @@ function AddClient() {
     console.log('Form Data:', formdata);
 
     try {
-      const response = await fetch(`http://localhost:3007/user/${user?._id}/addclient`, {
+      const response = await fetch(`https://zeiterfassung-0uiy.onrender.com/user/${user?._id}/addclient`, {
         method: "POST",credentials: 'include',
         headers: {
           "Content-Type": "application/json",
