@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieparser());
 app.use(cors({
-  origin: '*', 
+  origin: 'https://zeiterfassung-v5.onrender.com', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   allowedHeaders: ['Content-Type', 'Authorization'], 
   credentials: true 
